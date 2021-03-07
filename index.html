@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotek Mordet</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favico.png"/>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <h1><a href="#">BIBLIOTEK MORDET</a></h1>
+        </div>
+        <nav class="navbar-container">
+            <ul id="navbar">
+                <a href="#">
+                    <li class="active">HOVUDSIDE</li>
+                </a>
+                <a href="#">
+                    <li>BEVIS</li>
+                </a>
+                <a href="#">
+                    <li>MISTENKTE</li>
+                </a>
+                <a href="info.html">
+                    <li>INFO</li>
+                </a>
+            </ul>
+        </nav>
+        <div id="nav-toggle-img-container">
+            <div id="navbar-heading" style="visibility: hidden;"><h2 id="text-lol">MENY</h2></div>
+            <div id="flex">
+                <img src="img/hamb-ico.png" id="toggle-btn" alt="" class="nav-toggle-img" onclick="toggle()">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="main-container">
+            <div id="countdown">
+                <span class="dark-txt extra-bold large-txt">TIME REMAINING</span>
+                <span class="light-txt extra-bold medium-txt" id="timer">0:0:0:0</span>
+                <span class="dark-txt bold small-txt" id="count-lbl">D H M S</span>
+            </div>
+            <div id="info-btn">
+                <div id="info-btn-container">
+                    <a href="info.html">MEIR INFO</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>
